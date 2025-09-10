@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="shortcut icon" href="#" type="image/x-icon">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="items.css">
+    </head> 
+    <body>
+    <header>
+    <nav class="inline_items">
+        <div class="logo">
+        <img src="UIUX/Logo.png" alt="Logo"></div>
+        </div>
+        <ul class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="Profile.html"> Profile</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Collection.html">Collection</a>
+        </ul>
+        <div class="search">
+            <input type="text" class="search_input" id="searchInput" placeholder="Enter here" />
+        <button class="search_button" onclick="handleSearch()" alt="search">
+        <img src="UIUX/media/searchI.png">
+            </button>
+        </div>
+    </nav>
+    </header>
+        <main>
+            <article class="Attention" style="width: 70%;position:relative; right: 10%;">
+              <div class="smalIcon">
+                <img src="UIUX/10k.png" alt="charIcon"></div>
+                  <div class="story">
+                    <p>Each of the character might had it own order please dont break the character .Unless make them in AU .You are not allowed to copy the character's design or story but you can use them as reference .Be nice and have a good day. </p>
+              </div>
+            </article>
+            <div id="characterCountDisplay" style="position: relative; right: 10%; color: var(--text-color); margin: 10px 0;"></div>
+            <article class="Csmain" style="width: 70%; position: relative;right: 10%;" >
+              <aside class="CList">
+                <div id="characterGallery"></div>
+                <div id="noResults"</div>
+              </aside>
+            </article>
+            <section class="Filter_List">
+                <div class="Flist">
+                    <div id="filters">
+                        <div class="filter-section">
+                        <div class="filter-label"><h4>Entrance:</h4></div>
+                        <div class="filter-buttons" id="typeButtons">
+                            <button class="filter-btn" data-type="LCT">Lucid Train</button>
+                            <button class="filter-btn" data-type="HNC">Hue N Cry</button>
+                            <button class="filter-btn" data-type="TOS">The turmoil of Sin</button>
+                            <button class="filter-btn" data-type="TGL">The Great Land </button>
+                        </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                        <div class="filter-label"><h4>Filter by Color:</h4></div>
+                        <div class="filter-buttons" id="colorButtons">
+                            <button class="filter-btn" data-color="red" style="color: #E62841;">Red</button>
+                            <button class="filter-btn" data-color="orange" style="color: #E69728;">Orange</button>
+                            <button class="filter-btn" data-color="yellow" style="color: #C3B718;">Yellow</button>
+                            <button class="filter-btn" data-color="green" style="color: #6EAF1D">Green</button>
+                            <button class="filter-btn" data-color="blue" style="color: #105FC4">Blue</button>
+                            <button class="filter-btn" data-color="purple" style="color: #4C039B">Purple</button>
+                            <button class="filter-btn" data-color="pink" style="color: #CB1383">Pink</button>
+                            <button class="filter-btn" data-color="white" style="color: #D9D9D9;">White</button>
+                            <button class="filter-btn" data-color="black" style="color: #7f8691;">Black</button>
+                        </div>
+                        </div>
+                        <div class="filter-section">
+                        <div class="filter-label"><h4>Species:</h4></div>
+                        <div class="filter-buttons" id="speciesButtons">
+                            <button class="filter-btn" data-species="ANGL" >Angel</button>
+                            <button class="filter-btn" data-species="ANTH" >Anthron</button>
+                            <button class="filter-btn" data-species="BKFG" >Broken figure</button>
+                            <button class="filter-btn" data-species="DRAG" >Dragon</button>
+                            <button class="filter-btn" data-species="DOLL" >Doll</button>
+                            <button class="filter-btn" data-species="DEMN">Demon</button>
+                            <button class="filter-btn" data-species="VOCT" >Void creatures</button>
+                            <button class="filter-btn" data-species="ROBT" >Robot</button>
+                            <button class="filter-btn" data-species="HUMN" >Human</button>
+                            <button class="filter-btn" data-species="UDG" >Under God</button>
+                            <button class="filter-btn" data-species="SM" >Saintmen</button>
+                            <button class="filter-btn" data-species="OTG" >Outer God</button>
+                            <button class="filter-btn" data-species="EMPR" >The emperor</button>
+                            <button class="filter-btn" data-species="WITCH" >Witches</button>
+                            <button class="filter-btn" data-species="COTD" >Creatures of the Deep</button>
+                        </div>
+                        </div>
+                        <div class="filter-section">
+                        <div class="filter-label"><h4>Tier:</h4></div>
+                        <div class="filter-buttons" id="rarityButtons">
+                            <button class="filter-btn" data-rarity="basic" style="width: fit-content;display: flex;align-items: center;">1<div class="star"></button>
+                            <button class="filter-btn" data-rarity="common" style="width: fit-content;display: flex;align-items: center;">2<div class="star"></button>
+                            <button class="filter-btn" data-rarity="unatural" style="width: fit-content;display: flex;align-items: center;">3<div class="star"></button>
+                            <button class="filter-btn" data-rarity="rare" style="width: fit-content;display: flex;align-items: center;">4<div class="star"></button>
+                            <button class="filter-btn" data-rarity="epic" style="width: fit-content;display: flex;align-items: center;">5<div class="star"></button>
+                            <button class="filter-btn" data-rarity="legend" style="width: fit-content;display: flex;align-items: center;">6<div class="star"></button>
+                            <button class="filter-btn" data-rarity="realm" style="width: fit-content;display: flex;align-items: center;">7<div class="star"></button>
+                        </div>
+                        </div>
+                        <div style="margin: 5px 0;" id="pagination"></div>
+                    </div>
+                </div>
+                <div id="pagination" style="position: relative; margin: 10px auto;"></div>
+            </section>
+            <div class="star"></div>
+        </main>
+    <footer>
+    <div class="inline_items" id="themeContainer">
+        <div class="color-box" Style="background-color: var(--text-color);"></div>
+        <div class="color-box" Style="background-color: var(--primary-color);"></div>
+        <div class="color-box" Style="background-color: var(--secondary-color);"></div>
+        <div class="color-box" Style="background-color: var(--bg-color);"></div>
+        <div class="color-box" Style="background-color: var(--hover-color);"></div>
+        <div class="color-box" Style="background-color: var(--accent-color);"></div>
+    </div>
+
+    </footer>
+  <!-- Assisitant -->
+    <div>
+      <div id="floatingCharacter" onclick="onCharacterClick()">
+      <img id="characterImg" src="images/pfps/minichar/no202.png" alt="Character">
+      <div id="chatBubble" class="hidden"></div>
+      </div>
+  <!-- Filter -->
+      <div id="characterMenu">
+      <div class="tabs">
+      <button class="tab-button active" onclick="showTab(0)">Themes</button>
+      <button class="tab-button" onclick="showTab(1)">Music</button>
+      </div>
+      <div class="tab-content active">
+      <div class="menu-option" onclick="applyTheme('blue')">Blue</div>
+      <div class="menu-option" onclick="applyTheme('red')">Red</div>
+      <div class="menu-option" onclick="applyTheme('yellow')">Yellow</div>
+      <div class="menu-option" onclick="applyTheme('green')">Green</div>
+      <div class="menu-option" onclick="applyTheme('LT')">Lucid Train</div>
+      <div class="menu-option" onclick="applyTheme('HnC')">Hue & Cry</div>
+      <div class="menu-option" onclick="applyTheme('ToF')">Turmoil of Sin</div>
+      <div class="menu-option" onclick="applyTheme('default')">Reset</div>
+      </div>
+      <div class="tab-content">
+      <div class="menu-option" onclick="playMusic('playlist1')">Playlist 1</div>
+      <div class="menu-option" onclick="playMusic('playlist2')">Playlist 2</div>
+      <div class="menu-option" onclick="playMusic('playlist3')">Playlist 3</div>
+      <div class="menu-option" onclick="stopMusic()">Stop</div>
+      </div>
+      </div>
+
+      <audio id="audioPlayer" preload="auto"></audio>
+      <div id="musicBox">
+      <div id="nowPlaying">Now Playing: None</div>
+      <button onclick="prevSong()">⏮️</button>
+      <button id="playPauseBtn" onclick="togglePlayPause()">▶️</button>
+      <button onclick="nextSong()">⏭️</button>
+      <span id="timeDisplay">0:00 / 0:00</span>
+      <div id="progressContainer">
+      <div id="progressBar"></div> 
+      <button id="muteBtn" onclick="toggleMute()">🔊</button>
+      <button id="repeatBtn" onclick="toggleRepeat()">🔁</button>
+      </div>
+      </div>
+
+      <audio id="bubbleAudio" src="UIUX/meow.mp3" preload="auto"></audio>
+    </div>
+    <!-- Scripts -->
+        <script src="java/function.js"></script>
+        <script src="java/musicNtheme.js"></script>
+        <script src="java/FilterCG.js"></script>
+    </body>
+</html>

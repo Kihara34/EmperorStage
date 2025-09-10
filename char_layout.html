@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="shortcut icon" href="#" type="image/x-icon">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="Char_layout_style.css"> 
+        <link rel="stylesheet" href="items.css">
+    </head> 
+    <style>       
+        :root {
+            --text-color: #DFDFDF;
+            --primary-color: #868E96;
+            --secondary-color: #2F3643;
+            --bg-color: #0D131C;
+            --hover-color: #0F61B8;
+            --accent-color: #32AAFF;
+        }
+    </style>
+    <body   style="background-color: var(--bg-color);
+background-image: url('CHARS/');" ><!-- iF character had more than 5 stars then background-color: none -->
+    <header>
+    <nav class="inline_items">
+        <div class="logo">
+        <img src="UIUX/Logo.png" alt="Logo"></div>
+        </div>
+        <ul class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="Profile.html"> Profile</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Collection.html">Collection</a>
+        </ul>
+        <div class="search">
+            <input type="text" class="search_input" id="searchInput" placeholder="Enter here" />
+        <button class="search_button" onclick="handleSearch()" alt="search">
+        <img src="UIUX/media/searchI.png">
+            </button>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section class="character_info">
+            <div class="character_infoContainer">
+                <article class=" status">
+                    <section class ="character">
+                        <div class="Names">
+                            <h1 style =" text-decoration:line-through wavy var(--primary-color);color: var(--accent-color);">Unknown</h1>
+                            <h2>Unknown</h2>
+                        </div>
+                        <div class="info_details">
+                            <div class="info_Detail">
+                                <h4>Species</h4> 
+                                <p> Unknown</p>
+                            </div>
+                            <div class="info_Detail">
+                                <h4>Birthday</h4> 
+                                <p>Unknown</p>
+                            </div>
+                            <div class="info_Detail">
+                                <h4>Gender</h4> 
+                                <p>Female</p>
+                            </div>
+                            <div class="info_Detail">
+                                <h4>Height</h4> 
+                                <p>Unknown</p>
+                            </div>
+                            <div class="info_Detail">
+                                <h4>Status</h4> 
+                                <p>Unknown</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="indexInfo">
+                        <h2  style="text-align: center;">"Unknown"</h2>
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <div class="Info">
+                            <section class="bar" id="bar" >
+                                <h3>Mind</h3>
+                                <div class="fill-bar"></div>
+                                <p>000</p>
+                            </section>
+                        </div>
+                        <div class="Info">
+                            <section class="bar" id="bar" >
+                                <h3>Body</h3>
+                                <div class="fill-bar"></div>
+                                <p>000</p>
+                            </section>
+                        </div>
+                        <div class="Info">
+                            <section class="bar" id="bar" >
+                                <h3>Soul</h3>
+                                <div class="fill-bar"></div>
+                                <p>000</p>
+                            </section>
+                        </div>
+                        <div class="Info">
+                            <setion class="bar" id="bar" >
+                                <h3 style="color: var(--bg-color);opacity: 0.25">Belief</h3>
+                                <div class="fill-bar" style="background-color: var(--bg-color);opacity: 0.25;"></div>
+                                <p style="color: var(--bg-color);opacity: 0.25;">0</p>
+                            </selection>
+                        </div>
+                    </section>
+                </article>
+                <article class="characterLore">
+                    <div class="story">
+                        <h2>Lore</h2>
+                        <p></p>
+                    </div>
+                </article>
+            </div>
+            <aside class="pfpContainer">
+                <div class="pfp"><img src="CHARS/"></div>
+            </aside>
+        </section>
+        <div class="star"></div>
+        <section class="Collection">
+                <article class="tabs">
+                    <button class="tab-button active" onclick="showTab(0)"><h2>Gallery</h2></button>
+                    <button class="tab-button"  onclick="showTab(1)"><h2>Relationships</h2></button>
+                    <button class="tab-button" onclick="showTab(2)"><h2>Audios</h2></button>
+                    <button class="tab-button" onclick="showTab(3)"><h2>Notes</h2></button>
+                    <button class="tab-button" onclick="showTab(4)"><h2>Extra</h2></button>
+                </article>
+                <article class="tab-content active">
+                    <div id="imageCountDisplay"></div>
+                    <div id="imageGallery"></div>
+                    <div id="noResults">
+                        <img src="no-results.png" alt="No results">
+                    </div>
+                    <div id="pagination"></div>
+                                        
+                </article>    
+                <article class="tab-content">
+                    <h4>RelationshipS</h4>
+                    <ul class="char-list">
+                    </ul>
+                </article>
+                <article class="tab-content">
+                <h4>Voices Actor:None</h4>
+
+                </article>
+                <article class="tab-content">
+                    <h4>Notes</h4>
+                    <ul></ul>
+                </article>
+                <article class="tab-content">
+                    <h4>Extra</h4>
+                    <ul></ul>
+                </article>
+                <div class="modal" id="imageModal"></div>
+        </section>
+        <section class="Attention">
+            <div class="smalIcon">
+                <img src="UIUX/10k.png" alt="charIcon">
+            </div>
+            <div class="story">
+                <h2>Beneath the weight of dust and centuries, a lone angel waits—grief his crown, vengeance his only prayer.</h2>
+            </div>                
+        </section>
+        <h2>Skills Card</h2>    
+        <section class="card-grind">
+        <!-- Card 1 -->
+            <div class="cardContainer">
+                <div class="tarotCard">
+                    <div class="card-front">
+                        <img src="UIUX/Holder.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="UIUX/UnderConstruction.png" onclick="preview(this.src)">
+                    </div>    
+                </div>
+            </div>
+        <!-- Card 2 -->
+            <div class="cardContainer">
+                <div class="tarotCard">
+                    <div class="card-front">
+                        <img src="UIUX/Holder.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="UIUX/UnderConstruction.png" onclick="preview(this.src)">
+                    </div>    
+                </div>
+            </div>
+        <!-- Card 3 -->
+            <div class="cardContainer">
+                <div class="tarotCard">
+                    <div class="card-front">
+                        <img src="UIUX/Holder.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="UIUX/UnderConstruction.png" onclick="preview(this.src)">
+                    </div>    
+                </div>
+            </div>
+        <!-- Card 4 -->
+            <div class="cardContainer">
+                <div class="tarotCard">
+                    <div class="card-front">
+                        <img src="UIUX/Holder.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="UIUX/UnderConstruction.png" onclick="preview(this.src)">
+                    </div>    
+                </div>
+            </div>
+        <!-- Card 5 -->
+            <div class="cardContainer">
+                <div class="tarotCard">
+                    <div class="card-front">
+                        <img src="UIUX/Holder.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="UIUX/UnderConstruction.png" onclick="preview(this.src)">
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    
+    <footer>
+    <div class="inline_items" id="themeContainer">
+        <div class="color-box" Style="background-color: var(--text-color);"></div>
+        <div class="color-box" Style="background-color: var(--primary-color);"></div>
+        <div class="color-box" Style="background-color: var(--secondary-color);"></div>
+        <div class="color-box" Style="background-color: var(--bg-color);"></div>
+        <div class="color-box" Style="background-color: var(--hover-color);"></div>
+        <div class="color-box" Style="background-color: var(--accent-color);"></div>
+    </div>
+    </footer>
+
+    <div class="preview-box" onclick="hidePreview(event)" >
+        <span class="close">✕</span>
+        <div class="image-container">
+        <img id="previewImg" ondblclick="toggleZoom(event)" data-title="10key">
+        </div>
+        <button onclick="downloadStyledImage()">Download</button>
+    </div>
+    <canvas id="hiddenCanvas" style="display: none;image-rendering: pixelated;"></canvas>
+    </div>
+    <!-- Scripts -->
+    <script src="java/function.js"></script>
+    <script src="java/ImgFilter4Char.js"></script>
+    <script src="java/char_audio.js"></script>
+        <!--  { title: "Design", image: "UIUX/10k.png",credit:""} -->
+    <script>
+        const images = [
+           { title: "Design", image: "UIUX/10k.png",credit:""}
+        ];
+    </script>
+
+  </body>
+</html>

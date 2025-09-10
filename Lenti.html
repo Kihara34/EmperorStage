@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Renny Anderson</title>
+        <link rel="shortcut icon" href="#" type="image/x-icon">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="Char_layout_style.css"> 
+        <link rel="stylesheet" href="items.css">
+    </head> 
+    <style>       
+        :root {
+            --text-color: #DFDFDF;
+            --primary-color: #868E96;
+            --secondary-color: #2F3643;
+            --bg-color: #0D131C;
+            --hover-color: #0F61B8;
+            --accent-color: #32AAFF;
+        }
+    </style>
+    <body   style="background-color: none;
+background-image: url('CHARS/LentiLewis/Images/background.png');" >
+    <header>
+    <nav class="inline_items">
+        <div class="logo">
+        <img src="UIUX/Logo.png" alt="Logo"></div>
+        </div>
+        <ul class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="Profile.html"> Profile</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Collection.html">Collection</a>
+        </ul>
+        <div class="search">
+            <input type="text" class="search_input" id="searchInput" placeholder="Enter here" />
+        <button class="search_button" onclick="handleSearch()" alt="search">
+        <img src="UIUX/media/searchI.png">
+            </button>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section class="character_info">
+            <div class="character_infoContainer">
+                <article class=" status">
+                    <section class ="character">
+                        <div class="Names">
+                            <h1 style =" text-decoration:underline wavy var(--hover-color);color: var(--accent-color);">Lenti Lewis</h1>
+                            <h2>The sorrowful Angel </h2>
+                        </div>
+                        <div class="info_details">
+                            <div class="info_Detail">
+                                <h4>Species</h4> 
+                                <p> Angel</p>
+                            </div>
+                            <div class="info_Detail">
+                                <h4>Birthday</h4> 
+                                <p>March 17th</p>
+                            </div>
+                            <div class="info_Detail">
+                                <h4>Gender</h4> 
+                                <p>Male</p>
+                            </div>
+                            <div class="info_Detail">
+                                <h4>Height</h4> 
+                                <p>6.5 feet</p>
+                            </div>
+                            <div class="info_Detail">
+                                <h4>Status</h4> 
+                                <p>Alive</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="indexInfo">
+                        <h2  style="text-align: center;">"Any other form of existence will be yet another dull book in the library of life"</h2>
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <div class="Info">
+                            <section class="bar" id="bar" >
+                                <h3>Mind</h3>
+                                <div class="fill-bar"></div>
+                                <p>4500</p>
+                            </section>
+                        </div>
+                        <div class="Info">
+                            <section class="bar" id="bar" >
+                                <h3>Body</h3>
+                                <div class="fill-bar"></div>
+                                <p>1700</p>
+                            </section>
+                        </div>
+                        <div class="Info">
+                            <section class="bar" id="bar" >
+                                <h3>Soul</h3>
+                                <div class="fill-bar"></div>
+                                <p>3700</p>
+                            </section>
+                        </div>
+                        <div class="Info">
+                            <setion class="bar" id="bar" >
+                                <h3 style="color: var(--bg-color);opacity: 0.25">Belief</h3>
+                                <div class="fill-bar" style="background-color: var(--bg-color);opacity: 0.25;"></div>
+                                <p style="color: var(--bg-color);opacity: 0.25;">0</p>
+                            </selection>
+                        </div>
+                    </section>
+                </article>
+                <article class="characterLore">
+                    <div class="story">
+                        <h2>Lore</h2>
+                        <p>Lenti is a hybrid angel, the son of Oleksiy—a royal angel and keeper of the grand Library in the Antheneum—and a powerful raven tycoon. He spent his early years living with his mother, until the age of eight, when his father brought them both to the library. There, Lenti met his half-sister, Sacrina, and began a new chapter of his life among the towering shelves of ancient knowledge.Two years later, the Firework War split the skies. Lenti never saw the battle—only the messenger, limping into the library with blood on his wings. His parents, he said, had fallen to a four-horned demon.Four years passed in quiet grief. Sacrina, his half-sister, was his only light. Then duty called her to aid humankind. She left with a smile, promising to return. She never did. Another message came. The same demon had found her. The library fell silent. From its emptiness, Lenti rose—grief honed into a blade, waiting for the demon's throat</p>
+                    </div>
+                </article>
+            </div>
+            <aside class="pfpContainer">
+                <div class="pfp"><img src="CHARS/LentiLewis/Images/PFP.png"></div>
+            </aside>
+        </section>
+        <div class="star"></div>
+        <section class="Collection">
+                <article class="tabs">
+                    <button class="tab-button active" onclick="showTab(0)"><h2>Gallery</h2></button>
+                    <button class="tab-button"  onclick="showTab(1)"><h2>Relationships</h2></button>
+                    <button class="tab-button" onclick="showTab(2)"><h2>Audios</h2></button>
+                    <button class="tab-button" onclick="showTab(3)"><h2>Notes</h2></button>
+                    <button class="tab-button" onclick="showTab(4)"><h2>Extra</h2></button>
+                </article>
+                <article class="tab-content active">
+                    <div id="imageCountDisplay"></div>
+                    <div id="imageGallery"></div>
+                    <div id="noResults">
+                        <img src="no-results.png" alt="No results">
+                    </div>
+                    <div id="pagination"></div>
+                                        
+                </article>    
+                <article class="tab-content">
+                    <h4>RelationshipS</h4>
+                    <ul class="char-list">
+                        <li><p>Father:</p> Oleksiy  Eunoia</li>
+                        <li><p>Mother:</p> Olivia Lewis </li>
+                        <li><p>Co-worker:</p> <a href="Aniela.html"> Aniela Britan</a> </li>
+                        <li><p>Sibling:</p> Sacrina Eunoia</a> </li>
+                        <li><p>Sibling:</p> Hidden</a> </li>
+                        <li><p>Sibling:</p>  Hidden</a> </li>
+                        <li><p>Sibling:</p>  Hidden</a> </li>
+                        <li><p>Corrival:</p> <a href="No430.html"> No430</a> </li>
+                    </ul>
+                </article>
+                <article class="tab-content">
+                <h4>Voices Actor: Aronii</h4>
+                    <ul>
+                        <li class="char-player">
+                            <div class="char-controls">
+                            <p>Roles</p>
+                            <button class="char-play">▶️</button>
+                            <span class="char-time">0:00 / 0:00</span>
+                            <div class="progressContainer">
+                                <div class="progressBar"></div>
+                            </div>
+                            </div>
+                            <audio src="CHARS/LentiLewis/Audio/1.mp3"></audio>
+                    
+                        </li>  
+                        <li class="char-player">
+                            <div class="char-controls">
+                            <p>Introduce</p>
+                            <button class="char-play">▶️</button>
+                            <span class="char-time">0:00 / 0:00</span>
+                            <div class="progressContainer">
+                                <div class="progressBar"></div>
+                            </div>
+                            </div>
+                            <audio src="CHARS/LentiLewis/Audio/2.mp3"></audio>
+                        </li>  
+                        <li class="char-player">
+                            <div class="char-controls">
+                            <p>Costume</p>
+                            <button class="char-play">▶️</button>
+                            <span class="char-time">0:00 / 0:00</span>
+                            <div class="progressContainer">
+                                <div class="progressBar"></div>
+                            </div>
+                            </div>
+                            <audio src="CHARS/LentiLewis/Audio/3.mp3"></audio>
+                        </li>
+                        <li class="char-player">
+                            <div class="char-controls">
+                            <p>Consumeable</p>
+                            <button class="char-play">▶️</button>
+                            <span class="char-time">0:00 / 0:00</span>
+                            <div class="progressContainer">
+                                <div class="progressBar"></div>
+                            </div>
+                            </div>
+                            <audio src="CHARS/LentiLewis/Audio/4.mp3"></audio>
+                        </li>
+                        <li class="char-player">
+                            <div class="char-controls">
+                            <p>Like</p>
+                            <button class="char-play">▶️</button>
+                            <span class="char-time">0:00 / 0:00</span>
+                            <div class="progressContainer">
+                                <div class="progressBar"></div>
+                            </div>
+                            </div>
+                            <audio src="CHARS/LentiLewis/Audio/5.mp3"></audio>
+                        </li>
+                        <li class="char-player">
+                            <div class="char-controls">
+                            <p>Chit Chat</p>
+                            <button class="char-play">▶️</button>
+                            <span class="char-time">0:00 / 0:00</span>
+                            <div class="progressContainer">
+                                <div class="progressBar"></div>
+                            </div>
+                            </div>
+                            <audio src="CHARS/LentiLewis/Audio"></audio>
+                        </li>
+                        <li class="char-player">
+                            <div class="char-controls">
+                            <p>Memmory</p>
+                            <button class="char-play">▶️</button>
+                            <span class="char-time">0:00 / 0:00</span>
+                            <div class="progressContainer">
+                                <div class="progressBar"></div>
+                            </div>
+                            </div>
+                            <audio src="CHARS/LentiLewis/Audio"></audio>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+                <article class="tab-content">
+                    <h4>Notes</h4>
+                    <ul>
+                        <li><p>Despite his imposing, broad frame, he wields a rapier—a slender, lightweight blade that contrasts sharply with his size. The sword handle is a cherished relic, the only piece left from his sister's own weapon, carrying with it the weight of memory and loss. Through endless hours of relentless training, he has poured his sorrow and simmering anger into every thrust and parry, making the rapier an extension of his very soul—a blade forged not just of steel, but of grief and determination.</p></li>
+                        <li><p>Lenti's crystal ball held a floating shard of deep blue, glowing softly within its flawless shell. Silver feather patterns curved across half its surface, flashing light Free timethe brush of wings. It was both the key to the hidden library and a sheath of folded space for his rapier. At his touch, the blade slipped from its depths, answering as though it had always been there.</p></li>
+                        <li><p>Lenti possesses a strong, well-built physique, built for endurance and close combat. His feathers can transform into high-velocity projectiles, turning each strike into a deadly barrage. Skilled with the rapier—though still refining his experimental techniques—he excels in precise, fast-paced duels. With remarkable stamina, Lenti can fight for long periods without tiring. His radiant halo can unleash a blinding flash, momentarily disorienting enemies and giving him the upper hand in battle.</p></li>
+                    </ul>
+                </article>
+                <article class="tab-content">
+                    <h4>Extra</h4>
+                    <ul>
+                        <li><p>Lenti favored the simple comfort of fresh bread and a glass of almond milk. The mellow sweetness suited him, gentle and grounding. He often lingered over each bite, savoring the soft crumb and warm scent. Coffee, however, was a different story.Its sharp bitterness never appealed to his tongue nor to his mood. He preferred his mornings to unfold in quiet ease, unshaken by caffeine's restless rush.</p></li>
+                        <li><p>Lenti might look imposing, but he is actually shy around people. Most of his day is spent either reading or training, and when he is not doing that, you will likely find him in the library garden. He's so good at blending into the dark that other librarians have nearly had a heart attack when he suddenly appears out of nowhere.</p></li>
+                        <li><p>Lenti had never ventured beyond the plain, simple taste of bland bread—until one  day in his childhood, when he first tried bread drizzled with condensed milk. That single bite changed everything. For the next month, he devoured it at every meal, the sweet supply vanishing faster than anyone could track. It disappeared so quickly that folks in the library began murmuring about a mouse infestation… not realizing the “mouse” was just Lenti.</p></li>
+                    </ul>
+                </article>
+                <div class="modal" id="imageModal"></div>
+        </section>
+        <section class="Attention">
+            <div class="smalIcon">
+                <img src="UIUX/10k.png" alt="charIcon">
+            </div>
+            <div class="story">
+                <h2>Beneath the weight of dust and centuries, a lone angel waits—grief his crown, vengeance his only prayer.</h2>
+            </div>                
+        </section>
+        <h2>Skills Card</h2>    
+        <section class="card-grind">
+        <!-- Card 1 -->
+            <div class="cardContainer">
+                <div class="tarotCard">
+                    <div class="card-front">
+                        <img src="UIUX/Holder.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="UIUX/UnderConstruction.png" onclick="preview(this.src)">
+                    </div>    
+                </div>
+            </div>
+        <!-- Card 2 -->
+            <div class="cardContainer">
+                <div class="tarotCard">
+                    <div class="card-front">
+                        <img src="UIUX/Holder.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="UIUX/UnderConstruction.png" onclick="preview(this.src)">
+                    </div>    
+                </div>
+            </div>
+        <!-- Card 3 -->
+            <div class="cardContainer">
+                <div class="tarotCard">
+                    <div class="card-front">
+                        <img src="UIUX/Holder.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="UIUX/UnderConstruction.png" onclick="preview(this.src)">
+                    </div>    
+                </div>
+            </div>
+        <!-- Card 4 -->
+            <div class="cardContainer">
+                <div class="tarotCard">
+                    <div class="card-front">
+                        <img src="UIUX/Holder.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="UIUX/UnderConstruction.png" onclick="preview(this.src)">
+                    </div>    
+                </div>
+            </div>
+        <!-- Card 5 -->
+            <div class="cardContainer">
+                <div class="tarotCard">
+                    <div class="card-front">
+                        <img src="UIUX/Holder.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="UIUX/UnderConstruction.png" onclick="preview(this.src)">
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+    <div class="inline_items" id="themeContainer">
+        <div class="color-box" Style="background-color: var(--text-color);"></div>
+        <div class="color-box" Style="background-color: var(--primary-color);"></div>
+        <div class="color-box" Style="background-color: var(--secondary-color);"></div>
+        <div class="color-box" Style="background-color: var(--bg-color);"></div>
+        <div class="color-box" Style="background-color: var(--hover-color);"></div>
+        <div class="color-box" Style="background-color: var(--accent-color);"></div>
+    </div>
+    </footer>
+
+    <div class="preview-box" onclick="hidePreview(event)" >
+        <span class="close">✕</span>
+        <div class="image-container">
+        <img id="previewImg" ondblclick="toggleZoom(event)" data-title="10key">
+        </div>
+        <button onclick="downloadStyledImage()">Download</button>
+    </div>
+    <canvas id="hiddenCanvas" style="display: none;image-rendering: pixelated;"></canvas>
+    </div>
+    <!-- Scripts -->
+    <script src="java/function.js"></script>
+    <script src="java/ImgFilter4Char.js"></script>
+    <script src="java/char_audio.js"></script>
+        
+    <script>
+        const images = [
+            { title: "Design", image: "CHARS/LentiLewis/Images/Des.png"}
+        ];
+    </script>
+
+  </body>
+</html>

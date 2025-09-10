@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="shortcut icon" href="#" type="image/x-icon">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="items.css">
+    </head> 
+    <body>
+    <header>
+    <nav class="inline_items">
+        <div class="logo">
+        <img src="UIUX/Logo.png" alt="Logo"></div>
+        </div>
+        <ul class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="Profile.html"> Profile</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Collection.html">Collection</a>
+        </ul>
+        <div class="search">
+            <input type="text" class="search_input" id="searchInput" placeholder="Enter here" />
+        <button class="search_button" onclick="handleSearch()" alt="search">
+        <img src="UIUX/media/searchI.png">
+            </button>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <article class="container">
+            <div class="tittle">
+                <h2>Characters List</h2>
+                <a href="char_gallery.html">See more</a>
+            </div>
+            <section class ="Illustration">
+                <div class="image">
+                    <img src="CHARS/No430/Images/PFP.png"onclick="window.location.href = 'No430.html';">
+                </div>
+                <div class="image">
+                    <img src="CHARS/LentiLewis/Images/PFP.png"onclick="window.location.href = 'Lenti.html';">
+                </div>
+                <div class="image">
+                    <img src="CHARS/AnielaBritan/Images/PFP.png"onclick="window.location.href = 'AnielaBritan.html';">
+                </div>
+                <div class="image">
+                    <img src="UIUX/UnderConstruction.png"onclick="window.location.href = '#';">
+                </div>
+                <div class="image">
+                    <img src="UIUX/UnderConstruction.png"onclick="window.location.href = '#';">
+                </div>
+                <div class="image">
+                    <img src="UIUX/UnderConstruction.png"onclick="window.location.href = '#';">
+                </div>
+            </section>
+        </article>
+        <div class="star"></div>
+        <article class="container">
+            <div class="tittle">
+                <h2>Concept Art</h2>
+                <a href="concept_art.html">See more</a>
+            </div>
+            <section class ="Illustration">
+                <div class="image">
+                    <img src="UIUX/Holder.png"onclick="preview(this.src)">
+                </div>
+                <div class="image">
+                    <img src="UIUX/Holder.png"onclick="preview(this.src)">
+                </div>
+                <div class="image">
+                    <img src="UIUX/Holder.png"onclick="preview(this.src)">
+                </div>
+                <div class="image">
+                    <img src="UIUX/Holder.png"onclick="preview(this.src)">
+                </div>
+                <div class="image">
+                    <img src="UIUX/Holder.png"onclick="preview(this.src)">
+                </div>
+                <div class="image">
+                    <img src="UIUX/Holder.png"onclick="preview(this.src)">
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+    <div class="inline_items" id="themeContainer">
+        <div class="color-box" Style="background-color: var(--text-color);"></div>
+        <div class="color-box" Style="background-color: var(--primary-color);"></div>
+        <div class="color-box" Style="background-color: var(--secondary-color);"></div>
+        <div class="color-box" Style="background-color: var(--bg-color);"></div>
+        <div class="color-box" Style="background-color: var(--hover-color);"></div>
+        <div class="color-box" Style="background-color: var(--accent-color);"></div>
+    </div>
+
+    </footer>
+  <!-- Assisitant -->
+    <div>
+      <div id="floatingCharacter" onclick="onCharacterClick()">
+      <img id="characterImg" src="images/pfps/minichar/no202.png" alt="Character">
+      <div id="chatBubble" class="hidden"></div>
+      </div>
+      <div id="characterMenu">
+      <div class="tabs">
+      <button class="tab-button active" onclick="showTab(0)">Themes</button>
+      <button class="tab-button" onclick="showTab(1)">Music</button>
+      </div>
+      <div class="tab-content active">
+      <div class="menu-option" onclick="applyTheme('blue')">Blue</div>
+      <div class="menu-option" onclick="applyTheme('red')">Red</div>
+      <div class="menu-option" onclick="applyTheme('yellow')">Yellow</div>
+      <div class="menu-option" onclick="applyTheme('green')">Green</div>
+      <div class="menu-option" onclick="applyTheme('LT')">Lucid Train</div>
+      <div class="menu-option" onclick="applyTheme('HnC')">Hue & Cry</div>
+      <div class="menu-option" onclick="applyTheme('ToF')">Turmoil of Sin</div>
+      <div class="menu-option" onclick="applyTheme('default')">Reset</div>
+      </div>
+      <div class="tab-content">
+      <div class="menu-option" onclick="playMusic('playlist1')">Playlist 1</div>
+      <div class="menu-option" onclick="playMusic('playlist2')">Playlist 2</div>
+      <div class="menu-option" onclick="playMusic('playlist3')">Playlist 3</div>
+      <div class="menu-option" onclick="stopMusic()">Stop</div>
+      </div>
+      </div>
+
+      <audio id="audioPlayer" preload="auto"></audio>
+      <div id="musicBox">
+      <div id="nowPlaying">Now Playing: None</div>
+      <button onclick="prevSong()">⏮️</button>
+      <button id="playPauseBtn" onclick="togglePlayPause()">▶️</button>
+      <button onclick="nextSong()">⏭️</button>
+      <span id="timeDisplay">0:00 / 0:00</span>
+      <div id="progressContainer">
+      <div id="progressBar"></div> 
+      <button id="muteBtn" onclick="toggleMute()">🔊</button>
+      <button id="repeatBtn" onclick="toggleRepeat()">🔁</button>
+      </div>
+      </div>
+
+      <audio id="bubbleAudio" src="UIUX/meow.mp3" preload="auto"></audio>
+    </div>
+
+    <div class="preview-box" onclick="hidePreview(event)" >
+        <span class="close">✕</span>
+        <div class="image-container">
+        <img id="previewImg" ondblclick="toggleZoom(event)" data-title="10key">
+        </div>
+    </div>
+    <canvas id="hiddenCanvas" style="display: none;image-rendering: pixelated;"></canvas>
+    </div>
+
+    <!-- Scripts -->
+        <script src="java/function.js"></script>
+        <script src="java/musicNtheme.js"></script>
+    </body>
+</html>
