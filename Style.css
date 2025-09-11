@@ -816,7 +816,7 @@ footer{
 }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     #characterGallery {
       grid-template-columns: repeat(3, minmax(50px, 1fr));
     }
@@ -829,3 +829,4 @@ footer{
   bottom: 10px;
   width: 80px;}    
 }
+
