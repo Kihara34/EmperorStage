@@ -828,7 +828,8 @@ footer{
 }
 .Filter_List{  
   width: 80px;
-position: sticky;
+  bottom: 10px;
 }
     
+
 
