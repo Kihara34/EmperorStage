@@ -832,7 +832,7 @@ footer{
 .Flist{   
     margin: 0px;
     border-radius: 0.5rem;
-    padding:5px;}
+    padding:2.5px;}
 #typeButtons .filter-btn::before {
   font-size: 12px;
 }
@@ -842,6 +842,7 @@ footer{
 
 
 }
+
 
 
 
