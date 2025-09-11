@@ -805,14 +805,26 @@ footer{
 .Filter_List{  
   right: 0.3%;
 }
-
-
+.Filter_List{  
+  right: 0.3%;
+  width: 150px;
+}
 .character_info {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 15px ;
+    padding-bottom: 15px ;}
 }
 
-
-
+@media only screen and (max-width: 450px) {
+    #characterGallery {
+      grid-template-columns: repeat(3, minmax(50px, 1fr));
+    }
+.filter-btn[data-color] {
+  width: 15px;
+  height: 15px;
+  margin:2px;
 }
+.Filter_List{  
+  width: 80px;
+}
+    
