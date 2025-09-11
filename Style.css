@@ -834,18 +834,18 @@ footer{
     border-radius: 0.5rem;
     padding:2.5px;}
 #typeButtons .filter-btn::before {
-  font-size: 12px;
+  font-size: 10px;
 }
 #speciesButtons .filter-btn::before {
-  font-size: 12px;
+  font-size: 10px;
 }
 .filter-buttons{
   display: flex;
-  align-items: space-evenly;
-  gap: 2.5px;
+  gap: 2px;
  }
 
 }
+
 
 
 
