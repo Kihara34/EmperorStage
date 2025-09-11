@@ -827,7 +827,14 @@ footer{
 .Filter_List{  
   right: 0.3%;
   bottom: 50px;
-  width: 80px;}    
+  width: 80px;}
+#typeButtons .filter-btn::before {
+  font-size: 6px;
 }
+#speciesButtons .filter-btn::before {
+  font-size: 6px;
+}
+}
+
 
 
