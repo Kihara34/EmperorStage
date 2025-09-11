@@ -761,7 +761,8 @@ footer{
   content: attr(data-species); 
   font-size: 10px;
   color: var(--text-color, #000);
-}#typeButtons .filter-btn,
+}
+#typeButtons .filter-btn,
 #speciesButtons .filter-btn {
   font-size: 0; 
 }
@@ -831,10 +832,17 @@ footer{
 .Flist{   
     margin: 0px;
     border-radius: 0.5rem;
-    padding:5px;
+    padding:5px;}
+#typeButtons .filter-btn::before {
+  font-size: 12px;
+}
+#speciesButtons .filter-btn::before {
+  font-size: 12px;
 }
 
+
 }
+
 
 
 
