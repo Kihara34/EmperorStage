@@ -806,8 +806,10 @@ footer{
   right: 0.3%;
 }
 .Filter_List{  
-  right: 0.3%;
-  width: 150px;
+ right: 0.3%;
+ top:10px;
+ width: 150px;
+ 
 }
 .character_info {
     flex-direction: column;
@@ -826,5 +828,7 @@ footer{
 }
 .Filter_List{  
   width: 80px;
+position: sticky;
 }
     
+
