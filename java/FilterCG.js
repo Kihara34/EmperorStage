@@ -31,7 +31,7 @@ const characters = [
 { name: "Myung Mulgogi", type: "#", color: "green", species: "DOLL", rarity: "rare", number: 21, page: "#", image: "UIUX/UnderConstruction.png" },
 { name: "Cidd Gabrielle", type: "LCT", color: "green", species: "DOLL", rarity: "common", number: 22, page: "#", image: "UIUX/UnderConstruction.png" },
 { name: "Mirror Witch", type: "#", color: "white", species: "WITCH", rarity: "rare", number: 23, page: "#", image: "UIUX/UnderConstruction.png" },
-{ name: "Aniela Britan", type: "#", color: "pink", species: "ANGL", rarity: "unatural", number: 24, page: "AnielaBritan.html", image: "CHARS/AnielaBritan/Images/PFP.png" },
+{ name: "Aniela Britan", type: "#", color: "pink", species: "ANGL", rarity: "unatural", number: 24, page: "#", image: "UIUX/UnderConstruction.png" },
 { name: "No430", type: "TOS", color: "red", species: "DEMN", rarity: "legend", number: 25, page: "No430.html", image: "CHARS/No430/Images/PFP.png" },
 { name: "Tenkei", type: "#", color: "black", species: "EMPR", rarity: "realm", number: 26, page: "#", image: "UIUX/UnderConstruction.png" },
 { name: "Hatrex", type: "#", color: "blue", species: "EMPR", rarity: "realm", number: 27, page: "#", image: "UIUX/UnderConstruction.png" },
@@ -146,3 +146,4 @@ document.getElementById("characterCountDisplay").textContent =
       setupFilterButtons("rarityButtons", "rarity", selectedRarities);
 
     });
+
