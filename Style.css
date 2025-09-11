@@ -42,6 +42,12 @@ header , footer {
     --hover-color: #4D4E49;
     --accent-color: #000000;
 }
+
+.en { display: block; }
+.vie { display: none; }
+body.vie .en { display: none; }
+body.vie .vie { display: block; }
+
 h1{
     font-size: 20px;
     color: var(--text-color);
@@ -215,19 +221,18 @@ background-color:none;
   color: var(--text-color);
   box-shadow: 0 0 10px var(--accent-color);
 }
-.story{
-  justify-content: center;
-  padding:10px;
-  margin: 10px;
-  align-items: center;
-  background-color: none;  
+.story {
+  width: 100%;          
+  padding: 10px;
+  margin: 10px 0;     
+  background-color: transparent;
   overflow-x: hidden;
   overflow-y: auto;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   line-clamp: 4;
-  -webkit-box-orient: vertical
+  -webkit-box-orient: vertical;
 }
 .search_input {
     width: 0;
@@ -647,6 +652,7 @@ main {
     gap: 5px;
     width: 80%;
 }
+
 @media only screen and (max-width: 768px) {
 header , footer {
     padding: 0 5.33%;
@@ -845,6 +851,7 @@ footer{
  }
 
 }
+
 
 
 
