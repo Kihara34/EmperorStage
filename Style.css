@@ -828,12 +828,6 @@ footer{
   right: 0.3%;
   bottom: 50px;
   width: 80px;}
-#typeButtons .filter-btn::before {
-  font-size: 6px;
-}
-#speciesButtons .filter-btn::before {
-  font-size: 6px;
-}
 .Flist{   
     margin: 0px;
     border-radius: 0.5rem;
@@ -841,6 +835,7 @@ footer{
 }
 
 }
+
 
 
 
