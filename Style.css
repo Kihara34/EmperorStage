@@ -823,7 +823,7 @@ footer{
 .filter-btn[data-color] {
   width: 15px;
   height: 15px;
-  margin:2px;}
+  padding:1px;}
 .Filter_List{  
   right: 0.3%;
   bottom: 50px;
@@ -834,7 +834,14 @@ footer{
 #speciesButtons .filter-btn::before {
   font-size: 6px;
 }
+.Flist{   
+    margin: 0px;
+    border-radius: 0.5rem;
+    padding:5px;
 }
+
+}
+
 
 
 
