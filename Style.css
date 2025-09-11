@@ -839,9 +839,14 @@ footer{
 #speciesButtons .filter-btn::before {
   font-size: 12px;
 }
-
+.filter-buttons{
+  display: flex;
+  align-items: space-evenly;
+  gap: 2.5px;
+ }
 
 }
+
 
 
 
