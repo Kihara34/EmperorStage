@@ -4,11 +4,6 @@
     padding: 0;
 }
 
-.en { display: block; }
-.vie { display: none; }
-body.vie .en { display: none; }
-body.vie .vie { display: block; }
-
 html {
     cursor: url('../customize_cursor/cursor_auto.png'), auto;
     box-sizing: border-box;    
@@ -862,6 +857,7 @@ footer{
  }
 
 }
+
 
 
 
