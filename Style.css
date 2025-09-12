@@ -3,6 +3,12 @@
     margin: 0;
     padding: 0;
 }
+
+.en { display: block; }
+.vie { display: none; }
+body.vie .en { display: none; }
+body.vie .vie { display: block; }
+
 html {
     cursor: url('../customize_cursor/cursor_auto.png'), auto;
     box-sizing: border-box;    
@@ -220,6 +226,11 @@ background-color:none;
   background-image: linear-gradient(to right, var(--bg-color), var(--hover-color));
   color: var(--text-color);
   box-shadow: 0 0 10px var(--accent-color);
+}
+.story p {
+  white-space: pre-line;
+  text-indent: 0;
+  text-align: left;
 }
 .story {
   width: 100%;          
@@ -851,6 +862,7 @@ footer{
  }
 
 }
+
 
 
 
