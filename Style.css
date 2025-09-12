@@ -43,12 +43,6 @@ header , footer {
     --hover-color: #4D4E49;
     --accent-color: #000000;
 }
-
-.en { display: block; }
-.vie { display: none; }
-body.vie .en { display: none; }
-body.vie .vie { display: block; }
-
 h1{
     font-size: 20px;
     color: var(--text-color);
@@ -222,7 +216,8 @@ background-color:none;
   color: var(--text-color);
   box-shadow: 0 0 10px var(--accent-color);
 }
-.story p {
+.story p, 
+.story li {
   white-space: pre-line;
   text-indent: 0;
   text-align: left;
@@ -857,6 +852,7 @@ footer{
  }
 
 }
+
 
 
 
