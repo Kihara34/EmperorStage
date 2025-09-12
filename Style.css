@@ -224,16 +224,13 @@ background-color:none;
 }
 .story {
   width: 100%;          
-  padding: 10px;
+  padding:5px;
   margin: 10px 0;     
   background-color: transparent;
+  max-height: 100px; 
+  overflow-y: auto;   
   overflow-x: hidden;
-  overflow-y: auto;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
-  -webkit-box-orient: vertical;
+  text-align: left;
 }
 .search_input {
     width: 0;
@@ -852,6 +849,7 @@ footer{
  }
 
 }
+
 
 
 
