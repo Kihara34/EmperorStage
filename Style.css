@@ -110,8 +110,6 @@ header .inline_items{
   align-items: center;
   justify-content: center;;
 }
-
-
 .tab-button {
   padding: 5px 10px;
   border: none;
@@ -162,7 +160,6 @@ background-color:none;
   gap: 5px;
   width: 100%;
 }
-
 .smalIcon img{
   aspect-ratio: 1/1;
   max-width: 80px;
@@ -222,8 +219,7 @@ background-color:none;
   text-indent: 0;
   text-align: left;
 }
-.story {
-  width: 100%;          
+.story {         
   padding:5px;
   margin: 10px 0;     
   background-color: transparent;
@@ -852,6 +848,7 @@ footer{
  }
 
 }
+
 
 
 
