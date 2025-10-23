@@ -2,6 +2,7 @@
  text-decoration: none;
     margin: 0;
     padding: 0;
+    cursor: url('../customize_cursor/cursor_pointer.png'), pointer;
 }
 
 html {
@@ -848,6 +849,7 @@ footer{
  }
 
 }
+
 
 
 
