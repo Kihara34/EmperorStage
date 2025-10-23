@@ -2,11 +2,11 @@
  text-decoration: none;
     margin: 0;
     padding: 0;
-    cursor: url('../customize_cursor/cursor_pointer.png'), pointer;
+    cursor: url('../customize_cursor/cursor_auto.png'), auto;
 }
 
 html {
-    cursor: url('../customize_cursor/cursor_auto.png'), auto;
+    
     box-sizing: border-box;    
     scroll-behavior: smooth;    
     width: 100%;
@@ -849,6 +849,7 @@ footer{
  }
 
 }
+
 
 
 
